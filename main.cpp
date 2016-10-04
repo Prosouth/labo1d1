@@ -9,16 +9,16 @@
 
  Remarque(s) : <à compléter>
 
- Compilateur : MinGW-g++ 4.9.2
+ Compilateur : g++ (GCC) 6.2.1 
  -----------------------------------------------------------------------------------
  */
 
 #include <cstdlib>
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
+
     cout << "TEST" << endl;
 }
