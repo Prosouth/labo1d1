@@ -15,10 +15,29 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <cmath>
 using namespace std;
+const double PI = 3.14159265;
 
 int main()
 {
-
-    cout << "TEST" << endl;
+    double hauteur, ombre, angle;
+    
+    cout << " Quel est la hauteur du batiment? (en metres) " << endl;
+    cin >> hauteur;
+    
+    cout << endl << "Quel est la longueur de son ombre? (en metres) " << endl;
+    cin >> ombre;
+    
+    if(ombre == 0) 
+    { 
+        angle = 0;
+        cout << endl << " Il n'y a aucune ombre, donc pas d'angle d'incidence" << endl;
+    } else
+    {
+        cout << endl << "L'angle d'incidence des rayons du soleil est de " << angle << " degres " << endl;
+    
+    }
+    
+   
 }
