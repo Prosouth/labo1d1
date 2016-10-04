@@ -1,24 +1,24 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ -----------------------------------------------------------------------------------
+ Laboratoire : Laboratoire1d Exercice 1
+ Fichier     : main.cpp
+ Auteur(s)   : Adam Zouari et Sébastien Saez
+ Date        : 4 octobre 2016
 
-/* 
- * File:   main.cpp
- * Author: prosouth
- *
- * Created on 04 October 2016, 11:24
+ But         : <à compléter>
+
+ Remarque(s) : <à compléter>
+
+ Compilateur : MinGW-g++ 4.9.2
+ -----------------------------------------------------------------------------------
  */
 
 #include <cstdlib>
+#include <iostream>
 
 using namespace std;
 
-
-int main(int argc, char** argv)
+int main()
 {
-
-   return 0;
+    
 }
-
