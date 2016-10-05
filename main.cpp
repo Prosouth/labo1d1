@@ -29,7 +29,7 @@ int main()
     cout << endl << "Quel est la longueur de son ombre? (en metres) " << endl;
     cin >> ombre;
     
-    if(ombre == 0) 
+    if(!ombre) 
     { 
         angle = 0;
         cout << endl << " Il n'y a aucune ombre, donc pas d'angle d'incidence" << endl;
