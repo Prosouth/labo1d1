@@ -17,6 +17,7 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
+
 const double PI = 3.14159265;
 
 int main()
@@ -33,11 +34,9 @@ int main()
     { 
         angle = 0;
         cout << endl << " Il n'y a aucune ombre, donc pas d'angle d'incidence" << endl;
-    } else
+    } 
+    else
     {
         cout << endl << "L'angle d'incidence des rayons du soleil est de " << angle << " degres " << endl;
-    
     }
-    
-   
 }
