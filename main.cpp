@@ -15,6 +15,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <iomanip>
 #include <cmath>
 using namespace std;
 
@@ -37,6 +38,8 @@ int main()
     } 
     else
     {
-        cout << endl << "L'angle d'incidence des rayons du soleil est de " << angle << " degres " << endl;
+        angle = atan(hauteur/ombre) * 180 / PI;
+        cout << endl << "L'angle d'incidence des rayons du soleil est de " << setprecision(1) << fixed << angle << " degres " << endl;
     }
+    return 0;
 }
