@@ -33,13 +33,13 @@ int main()
     
     if(!ombre) 
     { 
-        angle = 0;
-        cout << endl << " Il n'y a aucune ombre, donc pas d'angle d'incidence" << endl;
+        angle = 90;
     } 
     else
     {
         angle = atan(hauteur/ombre) * 180 / PI;
-        cout << endl << "L'angle d'incidence des rayons du soleil est de " << setprecision(1) << fixed << angle << " degres " << endl;
     }
+    cout << endl << "L'angle d'incidence des rayons du soleil est de " << setprecision(1) << fixed << angle << " degres " << endl;
+
     return 0;
 }
