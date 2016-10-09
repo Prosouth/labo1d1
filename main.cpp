@@ -5,9 +5,10 @@
  Auteur(s)   : Adam Zouari et Sébastien Saez
  Date        : 4 octobre 2016
 
- But         : <à compléter>
+ But         : Calculer l'angle d'incidence au sol des rayons du soleil
+              derriere l'ombre d'un batiment 
 
- Remarque(s) : <à compléter>
+ Remarque(s) : Prise en compte du cas ou l'ombre est nulle
 
  Compilateur : g++ (GCC) 6.2.1 
  -----------------------------------------------------------------------------------
@@ -17,6 +18,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+
 using namespace std;
 
 const double PI = 3.14159265;
@@ -31,15 +33,17 @@ int main()
     cout << endl << "Quel est la longueur de son ombre? (en metres) " << endl;
     cin >> ombre;
     
-    if(!ombre) 
-    { 
+    if(!ombre)
+    {
         angle = 90;
     } 
     else
     {
-        angle = atan(hauteur/ombre) * 180 / PI;
+        angle = atan(hauteur/ombre) * 180 / PI;  // calcul de l'angle + passage de radians en degrés
     }
-    cout << endl << "L'angle d'incidence des rayons du soleil est de " << setprecision(1) << fixed << angle << " degres " << endl;
+    
+    cout << endl << "L'angle d'incidence des rayons du soleil est de " 
+         << setprecision(1) << fixed << angle << " degres " << endl;
 
     return 0;
 }
